@@ -2,8 +2,15 @@
  - git status - resulta na situação atual de alterações dos arquivos do repoditório
  - git init - para iniciar o git
  - git commit -am "comentário" - adiciona e atualiza as alterações feitas no arquivos
+
  - git reset --hard (hash do commit) - volta o repositório para a situação do commit(hash) usada deletando tudo o que aconteceu no repositório depois daquele momento, volta pra situação daquele momento (hash usada) 
  - git reset --soft (hash do commit) - volta o repositório para a situação do commit(hash) usada mantendo as alterações dos arquivos, porém sem comitá-las, volta pra situação daquele momento (hash usada) antes de ter sido salvo
+
  - git branch - resulta na lista de todos os branchs que existem e o que tiver com * é o que está sendo usado no momento, é o atual que eu estou
  - git branch (nome do branch) - cria um novo branch com o nome citado importando todos os arquivos e alterações feitas do branch a partir do qual o novo branch foi gerado, ou seja, cria uma cópia do branch atual com o nome citado.
  - git checkout (nome do branch) - troca de branch para o branch citado
+
+ - git diff - mostra todas as alterações detalhadamente, linha por linha, feitas em todos os arquivos do branch atual
+ - git diff --name-only - resulta apenas os nomes dos arquivos em que houveram alterações
+ - git diff (nome do arquivo.extensão) - resulta todas as alterações feitas apenas no arquivo citado apenas
+ - git checkout HEAD -- (nome do arquivo.extensão) - volta todas as alterações feitas no arquivo que ainda não foram comitadas dentro do branch atual, o HEAD significa que é para ser feito no branch atual esse comando. Volta para o estado "original" do arquivo.
