@@ -1,7 +1,12 @@
- - git log - resulta no historico de alterações do repoditorio
+RESUMO DAS AULAS DE GIT - VERSIONAMENTO
+
+PROCESSO --> CRIA/ALTERA ARQUIVO(S) / ADICIONA NO BRANCH / COMITA NO BRANCH / EXPORTA PRO GIT
+
+- git log - resulta no historico de alterações do repoditorio
  - git status - resulta na situação atual de alterações dos arquivos do repoditório
  - git init - para iniciar o git
- - git commit -am "comentário" - adiciona e atualiza as alterações feitas no arquivos
+ - git add -A - adiciona tudo o que foi alterado ao branch (necessário antes de comitar)
+ - git commit -am "comentário" - ANTES DE COMITAR USE UM GIT STATUS PARA VERIFICAR SE TUDO ESTÁ ADICIONADO E PRONTO PARA SER COMITADO - comita e atualiza as alterações feitas no arquivos do branch
 
  - git reset --hard (hash do commit) - volta o repositório para a situação do commit(hash) usada deletando tudo o que aconteceu no repositório depois daquele momento, volta pra situação daquele momento (hash usada) 
  - git reset --soft (hash do commit) - volta o repositório para a situação do commit(hash) usada mantendo as alterações dos arquivos, porém sem comitá-las, volta pra situação daquele momento (hash usada) antes de ter sido salvo
@@ -19,3 +24,4 @@
  - git remote - resulta na lista de repositórios adicionados
  - git remote -v - traz com mais detalhes do repositório
  - git push -u origin master - exporta o branch master para o repositório origin (remoto)
+ - git push origin master - atualiza o repositório origin com todo o conteúdo NOVO do branch master
