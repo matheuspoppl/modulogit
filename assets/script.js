@@ -1,0 +1,1 @@
+conteúdo de javascript
