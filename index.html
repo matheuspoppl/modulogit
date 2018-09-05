@@ -1,9 +1,9 @@
 RESUMO DAS AULAS DE GIT - VERSIONAMENTO
 
 PROCESSO --> CRIA/ALTERA ARQUIVO(S) / ADICIONA NO BRANCH / COMITA NO BRANCH / EXPORTA PRO GIT
-
-- git log - resulta no historico de alterações do repoditorio
- - git status - resulta na situação atual de alterações dos arquivos do repoditório
+ - cd C:\xampp/htdocs/(nome da pasta do projeto) - entra pelo GitBash na pasta onde está salvo o projeto e onde estão os arquivos que serão inclusos no branch. depois que entrar na pasta dar um git init para iniciar o git no branch que quer usar, no branch atual.
+ - git log - resulta no historico de alterações do repositorio
+ - git status - resulta na situação atual de alterações dos arquivos do repositório
  - git init - para iniciar o git
  - git add -A - adiciona tudo o que foi alterado ao branch (necessário antes de comitar)
  - git commit -am "comentário" - ANTES DE COMITAR USE UM GIT STATUS PARA VERIFICAR SE TUDO ESTÁ ADICIONADO E PRONTO PARA SER COMITADO - comita e atualiza as alterações feitas no arquivos do branch
@@ -25,3 +25,6 @@ PROCESSO --> CRIA/ALTERA ARQUIVO(S) / ADICIONA NO BRANCH / COMITA NO BRANCH / EX
  - git remote -v - traz com mais detalhes do repositório
  - git push -u origin master - exporta o branch master para o repositório origin (remoto)
  - git push origin master - atualiza o repositório origin com todo o conteúdo NOVO do branch master
+
+ - arquivo .gitignore - arquivo no qual estão os nomes dos arquivos, pastas, diretórios que não vão aparecer no branch, seja no repositório online, seja no local - ex: index.html (vai ignorar apenas o arquivos), *.txt (vai ignorar todos os arquivos .txt do branch), assets/ (vai ignorar todo o conteúdo da pasta assets)      
+
