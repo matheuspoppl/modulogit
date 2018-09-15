@@ -28,5 +28,5 @@ PROCESSO --> CRIA/ALTERA ARQUIVO(S) / ADICIONA NO BRANCH / COMITA NO BRANCH / EX
 
  - arquivo .gitignore - arquivo no qual estão os nomes dos arquivos, pastas, diretórios que não vão aparecer no branch, seja no repositório online, seja no local - ex: index.html (vai ignorar apenas o arquivos), *.txt (vai ignorar todos os arquivos .txt do branch), assets/ (vai ignorar todo o conteúdo da pasta assets)      
 
- - git revert --no-edit (hash do commit a ser revertido) - reverte o commit feito commitando, ou seja, desfaz tudo o que foi feito do commit (citado na hash) mantendo o registro/histórico de alterações feitas nos arquivos. A diferença entre o revert e o reset é que: o revert reverte as alterações feitas no arquivos e o reset volta o arquivo ao estado que estava no momento do commit.
+ - git revert --no-edit (hash do commit a ser revertido) - reverte o commit feito commitando, ou seja, desfaz tudo o que foi feito do commit (citado na hash) mantendo o registro/histórico de alterações feitas nos arquivos. A diferença entre o revert e o reset é que: o revert reverte as alterações feitas no arquivos deixando registrado no log e o reset volta o arquivo ao estado que estava no momento do commit.
 
