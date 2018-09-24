@@ -1,5 +1,8 @@
 RESUMO DAS AULAS DE GIT - VERSIONAMENTO
 
+Caso tenha necessidade de linkar um pc novo, gerar uma nova chave SSH 
+(https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
+
 PROCESSO --> CRIA/ALTERA ARQUIVO(S) / ADICIONA NO BRANCH / COMITA NO BRANCH / EXPORTA PRO GIT
  - cd C:\xampp/htdocs/(nome da pasta do projeto) - entra pelo GitBash na pasta onde está salvo o projeto e onde estão os arquivos que serão inclusos no branch. depois que entrar na pasta dar um git init para iniciar o git no branch que quer usar, no branch atual.
  - git log - resulta no historico de alterações do repositorio
@@ -31,11 +34,7 @@ PROCESSO --> CRIA/ALTERA ARQUIVO(S) / ADICIONA NO BRANCH / COMITA NO BRANCH / EX
  - git revert --no-edit (hash do commit a ser revertido) - reverte o commit feito commitando, ou seja, desfaz tudo o que foi feito do commit (citado na hash) mantendo o registro/histórico de alterações feitas nos arquivos. A diferença entre o revert e o reset é que: o revert reverte as alterações feitas no arquivos deixando registrado no log e o reset volta o arquivo ao estado que estava no momento do commit.
 
  - git push origin (nome_branch_aSerAdicionado) - sobe para o servidor remoto o branch com o nome citado depois do origin, ou seja, cria um novo branch no servidor remoto.
-
  - git push origin :(nome_branch_aSerAdicionado) - deleta do servidor remoto o branch citado, os dois pontos ":" significam que é pra deletar o arquivo.
-
  - git branch -D (nome_branch) - deleta do repositorio local o branch citado.
-
  - git pull origin master - comando que atualiza o repositório local de acordo com repositório remoto, ou seja, traz todos os arquivos do origin (remoto) para o master (local) - deve ser feito sempre antes de começar a editar os arquivos no repositorio local para deixar ele alinhado com o remoto.
-
  - git clone (url_doProjeto) - clona um repositório remoto que está sendo citado na url, é necessário estar na pasta na qual o repositório será salvo, ou seja, pelo GitBash (cd C:\xampp/htdocs/nomePastaNova) vai até a pasta na qual estará o clone e aí executa o comando.
